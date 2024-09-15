@@ -1,0 +1,79 @@
+.banner {
+  &-text {
+    margin-bottom: 53px;
+  }
+  &-bg-talk {
+    margin-right: 28.5px;
+  }
+}
+.recoard {
+  &-inner {
+    padding: 8px 26px;
+  }
+  &-search {
+    background: transparent;
+  }
+  &-search-img {
+    padding: 5.5px 4px 5.5px 12px;
+  }
+  &-search-wrap {
+    margin-bottom: 33px;
+  }
+  &-select-wrap {
+    margin-bottom: 37px;
+  }
+  &-top-area {
+    margin-bottom: 39px;
+  }
+  .offcanvas {
+    height: 90vh;
+  }
+  .offcanvas-header {
+    margin-top: 28px;
+    margin-bottom: 22px;
+  }
+  .offcanvas-body {
+    padding-bottom: 31px;
+  }
+  .form-control{
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .icon-img {
+    padding: 3px;
+  }
+  .pill-btn {
+    border-width: 0;
+    &:active,&:focus,&:target {
+      border: 1.5px solid #34C759;
+    }
+    &:active::after,&:focus::after,&:target::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background:center / cover no-repeat #34C759 url(/assets/images/icon-checked.svg);
+      padding: 3px 2px;
+      right: -2px;
+      bottom: 0;
+      border-radius: 50%;
+    }
+  }
+}
+.cycle {
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+}
+.trend {
+  >.container {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  &-chart {
+    padding: 50.21px 15.7px 40.79px 33.14px;
+  }
+}
