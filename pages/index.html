@@ -7,12 +7,7 @@
     <title>index</title>
   </head>
   <body>
-    <div
-      style="
-        background: center / cover no-repeat #f37998
-          url(../assets/images/bg-liner.svg);
-      "
-    >
+    <div class="cus-commonality-bg">
       <%- include('./layout/header'); -%>
 
       <section class="benner">
@@ -55,7 +50,9 @@
                 height: 43px;
               "
             >
-              <p class="banner-bg-talk py-3 px-4 text-neutral-700">雌激素正在升高</p>
+              <p class="banner-bg-talk py-3 px-4 text-neutral-700">
+                雌激素正在升高
+              </p>
             </div>
 
             <img src="../assets/images/img-rabbit.svg" alt="img-rabbit" />
@@ -135,114 +132,323 @@
                 />
               </div>
             </div>
-            <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#recoardOffcanvasBottom" aria-controls="recoardOffcanvasBottom">
+            <button
+              class="btn p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#recoardOffcanvasBottom"
+              aria-controls="recoardOffcanvasBottom"
+            >
               <img
                 src="../assets/images/icon-add-button-default.svg"
                 alt="add-button"
               />
             </button>
-            <div class="offcanvas offcanvas-bottom bg-neutral-50 overflow-y-scroll" tabindex="-1" id="recoardOffcanvasBottom" aria-labelledby="recoardOffcanvasBottomLabel">
+            <div
+              class="offcanvas offcanvas-bottom bg-neutral-50 overflow-y-scroll"
+              tabindex="-1"
+              id="recoardOffcanvasBottom"
+              aria-labelledby="recoardOffcanvasBottomLabel"
+            >
               <div class="container">
-                <div class="offcanvas-header d-flex justify-content-between align-items-center p-0">
+                <div
+                  class="offcanvas-header d-flex justify-content-between align-items-center p-0"
+                >
                   <span class="material-symbols-outlined">arrow_back_ios</span>
-                  <div class="d-flex flex-column align-items-center" id="recoardOffcanvasBottomLabel">
+                  <div
+                    class="d-flex flex-column align-items-center"
+                    id="recoardOffcanvasBottomLabel"
+                  >
                     <p class="fs-3 fw-semibold text-neutral-950 mb-1">7月5日</p>
                     <p class="fs-8 fw-normal text-neutral-500">月經週期第2天</p>
                   </div>
-                  <span class="material-symbols-outlined">arrow_forward_ios</span>
+                  <span class="material-symbols-outlined"
+                    >arrow_forward_ios</span
+                  >
                 </div>
                 <div class="offcanvas-body p-0">
-                  <div class="recoard-search-wrap input-group bg-neutral-100 rounded-pill">
-                    <img class="recoard-search-img" src="../assets/images/icon-search.svg" alt="search-icon">
-                    <input type="text" class="form-control recoard-search ps-0" aria-describedby="inputGroup-sizing-default" placeholder="搜尋">
+                  <div
+                    class="recoard-search-wrap input-group bg-neutral-100 rounded-pill"
+                  >
+                    <img
+                      class="recoard-search-img"
+                      src="../assets/images/icon-search.svg"
+                      alt="search-icon"
+                    />
+                    <input
+                      type="text"
+                      class="form-control recoard-search ps-0"
+                      aria-describedby="inputGroup-sizing-default"
+                      placeholder="搜尋"
+                    />
                   </div>
-                  <div class="recoard-top-area px-3 py-4 bg-neutral-0 rounded-4">
-                    <p class="mb-5 fw-semibold text-neutral-950">今天還好嗎？</p>
+                  <div
+                    class="recoard-top-area px-3 py-4 bg-neutral-0 rounded-4"
+                  >
+                    <p class="mb-5 fw-semibold text-neutral-950">
+                      今天還好嗎？
+                    </p>
                     <div class="recoard-select-wrap d-flex align-items-center">
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-feeling(3).svg" alt="feeling-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">還好</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-feeling(3).svg"
+                          alt="feeling-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >還好</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(2).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700">疲勞</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(2).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >疲勞</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(3).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700">腹痛</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(3).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >腹痛</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-flow(2).svg" alt="flow-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700">適中</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-flow(2).svg"
+                          alt="flow-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >適中</span
+                        >
                       </button>
-                      <button type="button" class="btn p-0"><span class="material-symbols-outlined d-block">arrow_forward_ios</span></button>
+                      <button type="button" class="btn p-0">
+                        <span class="material-symbols-outlined d-block"
+                          >arrow_forward_ios</span
+                        >
+                      </button>
                     </div>
                   </div>
                   <h2 class="fs-3 fw-semibold text-neutral-950 mb-5">類別</h2>
                   <div class="px-3 py-4 bg-neutral-0 rounded-4 mb-5">
                     <p class="fw-semibold text-neutral-950 mb-3">心情</p>
                     <div class="d-flex align-items-center">
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-feeling(3).svg" alt="feeling-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">還好</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-feeling(3).svg"
+                          alt="feeling-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >還好</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-feeling(2).svg" alt="feeling-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">難過</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-feeling(2).svg"
+                          alt="feeling-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >難過</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-feeling(4).svg" alt="feeling-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">焦躁</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-feeling(4).svg"
+                          alt="feeling-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >焦躁</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-feeling(5).svg" alt="feeling-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">嘴饞</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-feeling(5).svg"
+                          alt="feeling-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >嘴饞</span
+                        >
                       </button>
-                      <button type="button" class="btn p-0"><span class="material-symbols-outlined d-block">arrow_forward_ios</span></button>
+                      <button type="button" class="btn p-0">
+                        <span class="material-symbols-outlined d-block"
+                          >arrow_forward_ios</span
+                        >
+                      </button>
                     </div>
                   </div>
                   <div class="px-3 py-4 bg-neutral-0 rounded-4 mb-5">
                     <p class="fw-semibold text-neutral-950 mb-3">症狀</p>
                     <div class="d-flex align-items-center">
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(1).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">失眠</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(1).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >失眠</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(2).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">疲勞</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(2).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >疲勞</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(3).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">腹痛</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(3).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >腹痛</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-symptom(4).svg" alt="symptom-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">頭痛</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-purple-200 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-symptom(4).svg"
+                          alt="symptom-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >頭痛</span
+                        >
                       </button>
-                      <button type="button" class="btn p-0"><span class="material-symbols-outlined d-block">arrow_forward_ios</span></button>
+                      <button type="button" class="btn p-0">
+                        <span class="material-symbols-outlined d-block"
+                          >arrow_forward_ios</span
+                        >
+                      </button>
                     </div>
                   </div>
                   <div class="px-3 py-4 bg-neutral-0 rounded-4 mb-5">
                     <p class="fw-semibold text-neutral-950 mb-3">經血量</p>
                     <div class="d-flex align-items-center">
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-flow(1).svg" alt="flow-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">失眠</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-flow(1).svg"
+                          alt="flow-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >失眠</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-flow(2).svg" alt="flow-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">疲勞</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-flow(2).svg"
+                          alt="flow-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >疲勞</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-flow(3).svg" alt="flow-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">腹痛</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-flow(3).svg"
+                          alt="flow-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >腹痛</span
+                        >
                       </button>
-                      <button type="button" class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3">
-                        <img class="icon-img me-p5" src="../assets/images/icon-flow(4).svg" alt="flow-icon" style="width: 24px;height: 24px;">
-                        <span class="fs-8 fw-semibold text-neutral-700 ">頭痛</span>
+                      <button
+                        type="button"
+                        class="pill-btn d-flex align-items-center bg-pink-100 rounded-pill pill-icon py-0 ps-0 pe-2 shadow-bottom1 position-relative me-3"
+                      >
+                        <img
+                          class="icon-img me-p5"
+                          src="../assets/images/icon-flow(4).svg"
+                          alt="flow-icon"
+                          style="width: 24px; height: 24px"
+                        />
+                        <span class="fs-8 fw-semibold text-neutral-700"
+                          >頭痛</span
+                        >
                       </button>
-                      <button type="button" class="btn p-0"><span class="material-symbols-outlined d-block">arrow_forward_ios</span></button>
+                      <button type="button" class="btn p-0">
+                        <span class="material-symbols-outlined d-block"
+                          >arrow_forward_ios</span
+                        >
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -253,7 +459,9 @@
       </section>
       <section class="cycle">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between py-2 px-5 bg-pink-50 rounded-4 mb-2">
+          <div
+            class="d-flex align-items-center justify-content-between py-2 px-5 bg-pink-50 rounded-4 mb-2"
+          >
             <p class="fs-3 fw-semibold text-neutral-900">月經週期史</p>
             <a href="#" class="text-neutral-500 fs-5 fw-normal">
               查看全部<span class="material-symbols-outlined align-middle ms-2">
@@ -262,116 +470,372 @@
             </a>
           </div>
           <div class="py-2 px-5 bg-pink-50 rounded-2 mb-2">
-            <p class="mb-2 fs-3 fw-semibold text-neutral-500">目前月經週期：16天</p>
+            <p class="mb-2 fs-3 fw-semibold text-neutral-500">
+              目前月經週期：16天
+            </p>
             <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">07/05~</p>
             <div class="d-flex overflow-x-auto">
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
             </div>
           </div>
-          <div class="py-2 px-5 bg-pink-50 rounded-2 mb-2 ">
+          <div class="py-2 px-5 bg-pink-50 rounded-2 mb-2">
             <p class="mb-2 fs-3 fw-semibold text-neutral-500">36天</p>
-            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">07/05~07/05</p>
+            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">
+              07/05~07/05
+            </p>
             <div class="d-flex cus-flex overflow-x-auto">
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
             </div>
           </div>
-          <div class="py-2 px-5 bg-pink-50 rounded-2 mb-2 ">
+          <div class="py-2 px-5 bg-pink-50 rounded-2 mb-2">
             <p class="mb-2 fs-3 fw-semibold text-neutral-500">36天</p>
-            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">07/05~07/05</p>
+            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">
+              07/05~07/05
+            </p>
             <div class="d-flex cus-flex overflow-x-auto">
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
             </div>
-          </div>  
+          </div>
           <div class="py-2 px-5 bg-pink-50 rounded-2">
             <p class="mb-2 fs-3 fw-semibold text-neutral-500">36天</p>
-            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">07/05~07/05</p>
+            <p class="d-block mb-2 fs-5 fw-normal text-neutral-500">
+              07/05~07/05
+            </p>
             <div class="d-flex cus-flex overflow-x-auto">
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-pink-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-neutral-200 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
-              <span class="rounded-circle bg-purple-400 me-2 flex-shrink-0" style="width: 12px;height: 12px;"></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-pink-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-neutral-200 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
+              <span
+                class="rounded-circle bg-purple-400 me-2 flex-shrink-0"
+                style="width: 12px; height: 12px"
+              ></span>
             </div>
-          </div>    
+          </div>
         </div>
       </section>
       <section class="trend">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between py-2 px-5 bg-pink-50 rounded-4 mb-2">
+          <div
+            class="d-flex align-items-center justify-content-between py-2 px-5 bg-pink-50 rounded-4 mb-2"
+          >
             <p class="fs-3 fw-semibold text-neutral-900">月經趨勢</p>
             <a href="#" class="text-neutral-500 fs-5 fw-normal">
               查看全部<span class="material-symbols-outlined align-middle ms-2">

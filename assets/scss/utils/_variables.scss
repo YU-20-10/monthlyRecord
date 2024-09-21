@@ -311,6 +311,7 @@ $dark:          $gray-900 !default;
 // scss-docs-start theme-colors-map
 //客製化變更
 $theme-colors: (
+  "pink-500":      #EA537D,
   "pink-400":      #f37998,
   "pink-300":      #f8a9bb,
   "pink-100":      #fde6e9,
@@ -329,7 +330,7 @@ $theme-colors: (
   "neutral-100":   #e7e7e7,
   "neutral-50":    #f6f6f6,
   "neutral-0":     #FFFFFF,
-  
+  "blue-500":      #007AFF,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
@@ -438,7 +439,8 @@ $spacers: (
   7: $spacer * 2.5,
   8: $spacer * 3, 
   9: $spacer * 3.5,
-  10: $spacer * 4, 
+  10: $spacer * 4,
+  11: $spacer * 5,  
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -575,7 +577,8 @@ $border-radius-md:            .75rem !default;
 $border-radius-lg:            1rem !default;
 $border-radius-xl:            1.25rem !default;
 $border-radius-xxl:           1.5rem !default;
-$border-radius-xxxl:          2.5rem !default;
+$border-radius-3xl:          2.5rem !default;
+$border-radius-4xl:          100px !default;
 $border-radius-pill:          1000px !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -590,6 +593,8 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 //客製化設定
 $box-shadow-bottom1:          0 2px 10px rgba(#190134, .12) !default;
 $box-shadow-bottom2:          0 4px 10px rgba(#190134, .16) !default;
+$box-shadow-bottom3:          0 2px 8px rgba(#000000, .12) !default;
+$box-shadow-bottom4:          0 0px 4px rgba(#000000, .25) !default;
 $box-shadow-top1:             0 -2px 10px rgba(#190134, .12) !default;
 $box-shadow-top2:             0 -4px 10px rgba(#190134, .16) !default;
 // scss-docs-end box-shadow-variables
@@ -1010,18 +1015,27 @@ $form-check-inline-margin-end:    1rem !default;
 // scss-docs-end form-check-variables
 
 // scss-docs-start form-switch-variables
-$form-switch-color:               rgba($black, .25) !default;
+// 客製化
+// $form-switch-color:               rgba($black, .25) !default;
+$form-switch-color:               #FEF2F4;
+$form-switch-border-color:        #B0B0B0;
+$form-switch-border-width:          6.25%;
+// $form-switch-width:               2em !default;
 $form-switch-width:               2em !default;
 $form-switch-padding-start:       $form-switch-width + .5em !default;
-$form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
-$form-switch-border-radius:       $form-switch-width !default;
+$form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}' stroke='#{$form-switch-border-color}' stroke-width='#{$form-switch-border-width}'/></svg>") !default;
+// $form-switch-border-radius:       $form-switch-width !default;
+$form-switch-border-radius:       100px;
 $form-switch-transition:          background-position .15s ease-in-out !default;
 
 $form-switch-focus-color:         $input-focus-border-color !default;
+// $form-switch-focus-color:         #F37998 !default;
 $form-switch-focus-bg-image:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-focus-color}'/></svg>") !default;
 
-$form-switch-checked-color:       $component-active-color !default;
-$form-switch-checked-bg-image:    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}'/></svg>") !default;
+// $form-switch-checked-color:       $component-active-color !default;
+$form-switch-checked-color:       #F37998;
+$form-switch-checked-border-color:#EA537D;
+$form-switch-checked-bg-image:    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}' stroke='#{$form-switch-checked-border-color}' stroke-width='#{$form-switch-border-width}'/></svg>") !default;
 $form-switch-checked-bg-position: right center !default;
 // scss-docs-end form-switch-variables
 
@@ -1538,13 +1552,15 @@ $badge-border-radius:               var(--#{$prefix}border-radius) !default;
 // scss-docs-start modal-variables
 $modal-inner-padding:               $spacer !default;
 
-$modal-footer-margin-between:       .5rem !default;
+// $modal-footer-margin-between:       .5rem !default;
+$modal-footer-margin-between:       0 !default;
 
 $modal-dialog-margin:               .5rem !default;
 $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
 
+//客製化設定
 $modal-content-color:               null !default;
 $modal-content-bg:                  var(--#{$prefix}body-bg) !default;
 $modal-content-border-color:        var(--#{$prefix}border-color-translucent) !default;
@@ -1564,7 +1580,8 @@ $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-footer-bg:                   null !default;
-$modal-footer-border-color:         $modal-header-border-color !default;
+// $modal-footer-border-color:         $modal-header-border-color !default;
+$modal-footer-border-color:         #6D6D6D !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
 
 $modal-sm:                          300px !default;

@@ -1,12 +1,29 @@
 body {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .cus-flex {
-    font: 0 1 auto;
+  font: 0 1 auto;
+}
+
+.cus-y-half-vh {
+  height: 50vh;
+}
+
+.cus-y-all-vh {
+  height: 100vh;
+}
+
+.cus-fs-2-bigger {
+  font-size: 24px;
+}
+
+.cus-commonality-bg {
+  background: center / cover no-repeat #f37998
+    url(../assets/images/bg-liner.svg);
 }

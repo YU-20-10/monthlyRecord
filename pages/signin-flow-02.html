@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+  </head>
+  <body>
+    <div class="cus-y-all-vh cus-commonality-bg d-flex flex-column pb-5">
+      <header class="header mb-2">
+        <div class="container py-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="./signin-flow-01.html"
+              ><span
+                class="material-symbols-outlined link-neutral-500 cus-fs-2-bigger"
+                >arrow_back_ios</span
+              ></a
+            >
+            <a
+              href="./signin-flow-03.html"
+              class="fs-5 link-neutral-500"
+              >跳過</a
+            >
+          </div>
+        </div>
+      </header>
+      <section class="flex-grow-1">
+        <div class="container h-100">
+          <div class="signin d-flex flex-column justify-content-between h-100">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="../assets/images/img-face-with-icon.svg"
+                alt="img-face-with-icon"
+                style="width: 226px; height: 226px"
+                class="mb-7"
+              />
+              <p
+                class="signin-header-text bg-pink-50 rounded-4 fs-2 fw-semibold w-100 text-center text-neutral-950"
+              >
+                連接 Apple 健康
+              </p>
+              <div class="py-5 px-5 bg-pink-50 w-100 rounded-4">
+                <p class="text-neutral-700 text-center">
+                  與應用程式分享你的健康和健康指標，從而更清楚瞭解活動如何影響你的月經週期。
+                </p>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <button
+                class="btn btn-purple-100 rounded-6 fs-3 fw-semibold mb-4 py-4 shadow-bottom3"
+                type="button"
+                onclick="window.location.href='./signin-flow-03.html'"
+              >
+                同意，下一步
+              </button>
+              <button
+                class="btn btn-purple-100 rounded-6 fs-3 fw-semibold py-4 shadow-bottom3"
+                type="button"
+                onclick="window.location.href='./signin-flow-03.html'"
+              >
+                不同意，略過
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

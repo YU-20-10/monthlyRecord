@@ -83,6 +83,8 @@ $utilities: map-merge(
         none: none,
         bottom1:$box-shadow-bottom1,
         bottom2:$box-shadow-bottom2,
+        bottom3:$box-shadow-bottom3,
+        bottom4:$box-shadow-bottom4,
         top1:$box-shadow-top1,
         top2:$box-shadow-top2,
       )
@@ -724,7 +726,8 @@ $utilities: map-merge(
         4: var(--#{$prefix}border-radius-lg),
         5: var(--#{$prefix}border-radius-xl),
         6: var(--#{$prefix}border-radius-xxl),
-        7: var(--#{$prefix}border-radius-xxxl),
+        7: $border-radius-3xl,
+        8: $border-radius-4xl,
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )

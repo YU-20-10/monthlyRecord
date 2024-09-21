@@ -1,0 +1,65 @@
+.signin {
+  &-message-text {
+    margin-bottom: 22px;
+  }
+  &-section-space {
+    margin-bottom: 21px;
+  }
+  &-light {
+    .btn-purple-100 {
+      padding-right: 61.75px;
+      padding-left: 61.75px;
+    }
+  }
+  &-quest-checkbox {
+    padding-top: 19px;
+    padding-bottom: 33px;
+  }
+  &-header-text {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 19px;
+  }
+  &-modal-btn {
+    width: 50%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-width: 0;
+    
+  }
+  &-border-right {
+    border-right: 1px solid #6D6D6D;
+    &:hover {
+      border-color: #6D6D6D;
+    }
+  }
+  .btn-purple-100 {
+    color: #4f4f4f;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #f37998;
+      color: #ffffff;
+      border-color: transparent;
+    }
+  }
+  .form-check-input {
+    border-width: 0px;
+    background-color: #E7E9F8;
+    &:checked {
+      background-color: #FBD0DA;
+    }
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  .form-switch {
+    padding-left: 0;
+  }
+  .modal-body {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  
+}
