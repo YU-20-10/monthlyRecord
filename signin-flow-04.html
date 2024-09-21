@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+    <script type="module" crossorigin src="/monthlyRecord/assets/main-ee9715de.js"></script>
+    <link rel="stylesheet" href="/monthlyRecord/assets/main-e3f370f8.css">
+  </head>
+  <body>
+    <div
+      class="cus-y-all-vh cus-commonality-bg d-flex flex-column pb-5 overflow-y-scroll"
+    >
+      <header class="header mb-3">
+        <div class="container py-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="./signin-flow-03.html"
+              ><span
+                class="material-symbols-outlined link-neutral-500 cus-fs-2-bigger"
+                >arrow_back_ios</span
+              ></a
+            >
+            <a href="" class="fs-5 link-neutral-500">跳過</a>
+          </div>
+        </div>
+      </header>
+      <section class="flex-grow-1">
+        <div class="container h-100">
+          <div class="signin d-flex flex-column justify-content-between h-100">
+            <div class="d-flex flex-column align-items-center mb-4">
+              <img
+                src="/monthlyRecord/assets/img-bell-b20e832b.png"
+                alt="img-bell"
+                style="margin-bottom: 58px"
+              />
+              <p
+                class="signin-header-text bg-pink-50 rounded-4 fs-2 fw-semibold w-100 text-center text-neutral-950"
+              >
+                獲取關於您個人週期的提醒
+              </p>
+              <div class="py-5 bg-pink-50 w-100 rounded-4">
+                <p class="px-5 py-2 text-neutral-700">
+                  月月記將透過發送適時的提示和提醒，以幫助您關注自己的健康和幸福。
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column">
+              <button
+                class="btn btn-purple-100 rounded-6 fs-3 fw-semibold mb-4 py-4 shadow-bottom3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#infoModal"
+              >
+                同意，下一步
+              </button>
+              <button
+                class="btn btn-purple-100 rounded-6 fs-3 fw-semibold py-4 shadow-bottom3"
+                type="button"
+                onclick="window.location.href=''"
+              >
+                不同意，略過
+              </button>
+            </div>
+            <div
+                class="modal fade"
+                id="infoModal"
+                tabindex="-1"
+                aria-labelledby="infoModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered ms-auto me-auto"
+                  style="width: 300px"
+                >
+                  <div class="modal-content shadow-bottom4">
+                    <div class="modal-body px-5 text-center">
+                      <p class="py-2 fs-2 fw-bold">月月記想要傳送通知</p>
+                      <p class="py-1">
+                        通知可包含提示、聲音和圖像標記。可以在「設定」中進行設定。
+                      </p>
+                    </div>
+                    <div class="modal-footer d-flex">
+                      <button
+                        type="button"
+                        class="signin-modal-btn signin-border-right btn rounded-0 link-blue-500"
+                        data-bs-dismiss="modal"
+                      >
+                        不允許
+                      </button>
+                      <button
+                        type="button"
+                        class="signin-modal-btn btn btn-primary rounded-0 link-blue-500"
+                      >
+                        允許
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
