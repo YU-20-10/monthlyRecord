@@ -5,6 +5,15 @@
   &-section-space {
     margin-bottom: 21px;
   }
+  .btn-purple-100 {
+    color: #4f4f4f;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #f2f3fb;
+      border-color: transparent;
+    }
+  }
   &-light {
     .btn-purple-100 {
       padding-right: 61.75px;
@@ -46,15 +55,6 @@
     &:focus {
       background: #f8a9bb;
       color: #ffffff;
-      border-color: transparent;
-    }
-  }
-  .btn-purple-100 {
-    color: #4f4f4f;
-    &:hover,
-    &:active,
-    &:focus {
-      background: #f2f3fb;
       border-color: transparent;
     }
   }
