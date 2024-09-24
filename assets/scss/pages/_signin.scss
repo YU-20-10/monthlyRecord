@@ -9,6 +9,13 @@
     .btn-purple-100 {
       padding-right: 61.75px;
       padding-left: 61.75px;
+      &:hover,
+      &:active,
+      &:focus {
+        background: #f37998;
+        color: #ffffff;
+        border-color: transparent;
+      }
     }
   }
   &-quest-checkbox {
@@ -25,21 +32,20 @@
     padding-top: 28px;
     padding-bottom: 28px;
     border-width: 0;
-    
   }
   &-border-right {
-    border-right: 1px solid #6D6D6D;
+    border-right: 1px solid #6d6d6d;
     &:hover {
-      border-color: #6D6D6D;
+      border-color: #6d6d6d;
     }
   }
   .btn-pink-400 {
-    color: #FFFFFF;
+    color: #ffffff;
     &:hover,
     &:active,
     &:focus {
-      background: #F8A9BB;
-      color: #FFFFFF;
+      background: #f8a9bb;
+      color: #ffffff;
       border-color: transparent;
     }
   }
@@ -54,9 +60,9 @@
   }
   .form-check-input {
     border-width: 0px;
-    background-color: #E7E9F8;
+    background-color: #e7e9f8;
     &:checked {
-      background-color: #FBD0DA;
+      background-color: #fbd0da;
     }
     &:focus {
       border-color: transparent;
@@ -70,5 +76,4 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  
 }
