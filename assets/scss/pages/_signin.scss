@@ -13,7 +13,7 @@
   }
   &-quest-checkbox {
     padding-top: 19px;
-    padding-bottom: 33px;
+    padding-bottom: 24px;
   }
   &-header-text {
     padding-top: 22px;
@@ -33,13 +33,22 @@
       border-color: #6D6D6D;
     }
   }
+  .btn-pink-400 {
+    color: #FFFFFF;
+    &:hover,
+    &:active,
+    &:focus {
+      background: #F8A9BB;
+      color: #FFFFFF;
+      border-color: transparent;
+    }
+  }
   .btn-purple-100 {
     color: #4f4f4f;
     &:hover,
     &:active,
     &:focus {
-      background: #f37998;
-      color: #ffffff;
+      background: #f2f3fb;
       border-color: transparent;
     }
   }
