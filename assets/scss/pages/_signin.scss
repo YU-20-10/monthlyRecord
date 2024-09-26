@@ -5,6 +5,16 @@
   &-section-space {
     margin-bottom: 21px;
   }
+  &-disagree-btn {
+    border: none;
+    background: transparent;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ffffff;
+      border-color: transparent;
+    }
+  }
   .btn-purple-100 {
     color: #4f4f4f;
     &:hover,
