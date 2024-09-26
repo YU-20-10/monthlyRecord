@@ -58,6 +58,14 @@
       border-color: #6d6d6d;
     }
   }
+  &-neutral-700 {
+    color: #4F4F4F;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #6d6d6d;
+    }
+  }
   .btn-pink-400 {
     color: #ffffff;
     &:hover,
