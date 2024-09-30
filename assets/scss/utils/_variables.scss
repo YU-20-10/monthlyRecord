@@ -6,16 +6,28 @@
 // Color system
 
 // scss-docs-start gray-color-variables
+//客製化設定
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #6c757d !default;
+// $gray-700: #495057 !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
+$gray-50:  #f6f6f6;
+$gray-100: #e7e7e7;
+$gray-200: #d1d1d1;
+$gray-300: #b0b0b0;
+$gray-400: #888888;
+$gray-500: #6d6d6d;
+$gray-600: #5d5d5d;
+$gray-700: #4f4f4f;
+$gray-800: #454545;
+$gray-900: #3d3d3d;
+$gray-950: #2e2e2e;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -49,11 +61,12 @@ $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
+//客製化修改_
 $colors: (
   "blue":       $blue,
   "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
+  "purple":     #8882d2,
+  "pink":       #f37998,
   "red":        $red,
   "orange":     $orange,
   "yellow":     $yellow,
@@ -63,6 +76,8 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
+  "gray-2":     $gray-500,  //客製化設定
+  "gray-3":     $gray-300,  //客製化設定
   "gray-dark":  $gray-800
 ) !default;
 // scss-docs-end colors-map
@@ -96,25 +111,51 @@ $indigo-700: shade-color($indigo, 40%) !default;
 $indigo-800: shade-color($indigo, 60%) !default;
 $indigo-900: shade-color($indigo, 80%) !default;
 
-$purple-100: tint-color($purple, 80%) !default;
-$purple-200: tint-color($purple, 60%) !default;
-$purple-300: tint-color($purple, 40%) !default;
-$purple-400: tint-color($purple, 20%) !default;
-$purple-500: $purple !default;
-$purple-600: shade-color($purple, 20%) !default;
-$purple-700: shade-color($purple, 40%) !default;
-$purple-800: shade-color($purple, 60%) !default;
-$purple-900: shade-color($purple, 80%) !default;
+// $purple-100: tint-color($purple, 80%) !default;
+// $purple-200: tint-color($purple, 60%) !default;
+// $purple-300: tint-color($purple, 40%) !default;
+// $purple-400: tint-color($purple, 20%) !default;
+// $purple-500: $purple !default;
+// $purple-600: shade-color($purple, 20%) !default;
+// $purple-700: shade-color($purple, 40%) !default;
+// $purple-800: shade-color($purple, 60%) !default;
+// $purple-900: shade-color($purple, 80%) !default;
 
-$pink-100: tint-color($pink, 80%) !default;
-$pink-200: tint-color($pink, 60%) !default;
-$pink-300: tint-color($pink, 40%) !default;
-$pink-400: tint-color($pink, 20%) !default;
-$pink-500: $pink !default;
-$pink-600: shade-color($pink, 20%) !default;
-$pink-700: shade-color($pink, 40%) !default;
-$pink-800: shade-color($pink, 60%) !default;
-$pink-900: shade-color($pink, 80%) !default;
+//客製化設定
+$purple-50: #f2f3fb;
+$purple-100: #E7E9F8;
+$purple-200: #D3D6F2;
+$purple-300: #B8BBE9;
+$purple-400: #9B9BDE;
+$purple-500: #8882D2;
+$purple-600: #7769C2;
+$purple-700: #6658AA;
+$purple-800: #53498A;
+$purple-900: #47406F;
+$purple-900: #2A2541;
+
+// $pink-100: tint-color($pink, 80%) !default;
+// $pink-200: tint-color($pink, 60%) !default;
+// $pink-300: tint-color($pink, 40%) !default;
+// $pink-400: tint-color($pink, 20%) !default;
+// $pink-500: $pink !default;
+// $pink-600: shade-color($pink, 20%) !default;
+// $pink-700: shade-color($pink, 40%) !default;
+// $pink-800: shade-color($pink, 60%) !default;
+// $pink-900: shade-color($pink, 80%) !default;
+
+//客製化設定
+$pink-50: #fef2f4;
+$pink-100: #fde6e9;
+$pink-200: #fbd0da;
+$pink-300: #f8a9bb;
+$pink-400: #f37998;
+$pink-500: #ea537d;
+$pink-600: #d52961;
+$pink-700: #b31d51;
+$pink-800: #961b4a;
+$pink-900: #811a45;
+$pink-950: #480922;
 
 $red-100: tint-color($red, 80%) !default;
 $red-200: tint-color($red, 60%) !default;
@@ -298,8 +339,13 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:             $pink-400;     //客製化設定
+$primary-medium:      $pink-300;    //客製化設定
+$primary-light:       $pink-100;    //客製化設定
+$primary-extra-light: $pink-50;    //客製化設定
+$secondary:           $purple-500; //客製化設定
+$secondary-medium:    $purple-300; //客製化設定
+$secondary-light:     $purple-100; //客製化設定
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -332,11 +378,21 @@ $theme-colors: (
   "neutral-50":    #f6f6f6,
   "neutral-0":     #FFFFFF,
   "blue-500":      #007AFF,
+  "primary":                $pink-400,    //客製化變更
+  "primary-medium":         $pink-300,    //客製化變更
+  "primary-light":          $pink-100,    //客製化變更
+  "primary-extra-light":    $pink-50,     //客製化變更
+  "secondary":              $purple-500,  //客製化變更
+  "secondary-medium":       $purple-300,  //客製化變更
+  "secondary-light":        $purple-100,  //客製化變更
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":         $gray-950,    //客製化變更
+  "dark-2":       $gray-700,    //客製化變更
+  "dark-3":       $gray-300,    //客製化變更
+  "dark-4":       $gray-500,    //客製化變更
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -450,9 +506,15 @@ $spacers: (
 // Define the edge positioning anchors of the position utilities.
 
 // scss-docs-start position-map
+//客製化設定
 $position-values: (
-  0: 0,
-  50: 50%,
+  0:   0,
+  5:   5%,
+  10:  10%,
+  25:  25%,
+  50:  50%,
+  75:  75%,
+  90:  90%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
